@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artesanato Caxiense - Cadastro</title>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+  <script src="./src/js/config.js"></script>
+
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/listagem.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="titulo">Artesanato Caxiense</h1>
+  </header>
+  <main>
+
+    <form id="form__filtros">
+
+      <fieldset class="fieldset__padrao" id="filtros__entradas">
+        <legend>Filtros</legend>
+
+        <label for="artesanato">Artesanato</label>
+        <input type="text" id="artesanato" name="artesanato">
+
+        <label for="artesao">Artesã(o)</label>
+        <input type="text" id="artesao" name="artesao">
+
+        <button id="botao__filtrar" class="botao__primario"> Filtrar </button>
+
+      </fieldset>
+
+    </form>
+
+    <ol id="lista__artesanatos">
+
+    </ol>
+
+    <div class="lista__paginacao">
+      <button class="botao__primario" id="botao__anterior">Anterior</button>
+      <button class="botao__primario" id="botao__proximo">Proximo</button>
+        </div>
+  </main>
+  <footer>
+    <span>Sublim desenvolvimentos © 2022 Luis Fernando Reis</span>
+  </footer>
+
+  <script src="./src/js/paginas/listagem.js" type="module"></script>
+</body>
+
+</html>

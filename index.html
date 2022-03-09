@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Artesanato Caxiense - Cadastro</title>
+  <title>Artesanato Caxiense - Listagem</title>
+  
   <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
   <script src="./src/js/config.js"></script>
-
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="./src/css/listagem.css">
 </head>
@@ -18,6 +18,9 @@
 
   <header>
     <h1 class="titulo">Artesanato Caxiense</h1>
+    <nav class="menu">
+      <a class="menu_item" href="cadastro.html">cadastro</a>
+    </nav>
   </header>
   <main>
 
@@ -44,7 +47,7 @@
 
     <div class="lista__paginacao">
       <button class="botao__primario" id="botao__anterior">Anterior</button>
-      <button class="botao__primario" id="botao__proximo">Proximo</button>
+      <button class="botao__primario" id="botao__proximo"href="./cadastro.html" >Proximo </button>
         </div>
   </main>
   <footer>
